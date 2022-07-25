@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import HomePage from './components/homePage/homePage';
 import AboutPage from './components/aboutPage/aboutPage';
 import SkillPage from './components/skillPage/skillPage';
@@ -11,13 +12,6 @@ import  { useRef } from 'react'
 
 
 export default function App() {
-  const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)
-  const myRef = useRef(null)
-   const executeScroll = () => scrollToRef(myRef)
-   const myRef2 = useRef(null)
-   const executeScroll2 = () => scrollToRef(myRef2)
-   const myRef3 = useRef(null)
-   const executeScroll3 = () => scrollToRef(myRef3)
   return (
     <div className='medFont'>
       <header className="text-gray-400 bg-cusGreen font-poppins">
@@ -26,18 +20,18 @@ export default function App() {
             <span className="ml-3 text-3xl ">MK.</span>
           </button>
           <nav className="md:mr-auto md:ml-4  md:border-gray-700	flex flex-wrap items-center text-base justify-center font-b text-cusBlue">
-            <button className="mr-8 ml-1 hover:text-white" onClick={executeScroll}>CONTACT</button>
-            <button className="mr-8 hover:text-white"onClick={executeScroll2}>ABOUT</button>
-            <button className="mr-8 hover:text-white"onClick={executeScroll3}>WORK</button>
+            <Link to="contact" spy={true} smooth={true} offset={50} duration={800}className="mr-8 ml-1 hover:text-white cursor-pointer" >CONTACT</Link>
+            <Link to="about" spy={true} smooth={true} offset={50} duration={800} className="mr-8 hover:text-white cursor-pointer">ABOUT</Link>
+            <Link to="work" spy={true} smooth={true} offset={50} duration={800} className="mr-8 hover:text-white cursor-pointer">WORK</Link>
       
           </nav>
         </div>
       </header>
     <HomePage/>
-    <AboutPage innerRef={myRef2}/>
+    <AboutPage/>
     <SkillPage/> 
-    <WorkPage innerRef={myRef3}/>
-    <ContactPage innerRef={myRef}/>
+    <WorkPage />
+    <ContactPage />
     </div>
   )
 }

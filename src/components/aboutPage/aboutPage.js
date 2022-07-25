@@ -1,10 +1,10 @@
 import React, { useState} from 'react';
 
-const AboutPage=({innerRef})=>{
+const AboutPage=()=>{
   const [visb,setVisib]=useState('invisible')
   const [animate,setAnimate]=useState('')
     return(
-        <section className="text-cusWhite bg-cusBlue font-poppins" ref={innerRef} onMouseEnter={()=>{
+        <section className="text-cusWhite bg-cusBlue font-poppins" id='about' onMouseEnter={()=>{
           setVisib('visible ')
           setAnimate('animate__animated animate__fadeInUp')}} onTouchMove={()=>{
             setVisib('visible ')

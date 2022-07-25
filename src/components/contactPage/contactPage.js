@@ -1,5 +1,5 @@
 import emailjs from 'emailjs-com'
-const ContactPage = ({ innerRef })=>{
+const ContactPage = ()=>{
 
     const SendData = (e)=>{
         e.preventDefault();
@@ -19,7 +19,7 @@ const ContactPage = ({ innerRef })=>{
 
 
 
-    return(<section className="text-cusWhite bg-cusGreen font-poppins relative" ref={innerRef}>
+    return(<section className="text-cusWhite bg-cusGreen font-poppins relative" id='contact'>
   <div className="container px-5 py-24 mx-auto">
     <div className="flex flex-col text-center w-full mb-12">
       <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Contact Me</h1>
