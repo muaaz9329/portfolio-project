@@ -5,7 +5,6 @@ import AboutPage from './components/aboutPage/aboutPage';
 import SkillPage from './components/skillPage/skillPage';
 import WorkPage from './components/workPage/workPage';
 import ContactPage from './components/contactPage/contactPage';
-import  { useRef } from 'react'   
 // General scroll to element function
 
 
