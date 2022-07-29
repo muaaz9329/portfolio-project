@@ -4,7 +4,7 @@ import ResBuild from './img/resBuild.png'
  const WorkPage=()=>{
   const [visb,setVisib]=useState('invisible')
   const [animate,setAnimate]=useState('')
-    const workPage=[{image:ResBuild
+    const workPage=[{id:1,image:ResBuild
     ,data:{title:'Resume builder',para:'This website was developed by me for users to make their resume by just providing information and choosing their favourite design. The whole website is made with React.js and I am currently working to make it responsive',link:'https://resumebuilder-ver1.netlify.app/'}}]
     return(<section className="bg-cusBlue font-poppins text-cusWhite"  id="work" onMouseEnter={()=>{
       setVisib('visible ')
@@ -18,7 +18,7 @@ import ResBuild from './img/resBuild.png'
       <h1 className="sm:text-5xl text-6xl font-bold title-font mb-4 text-gray-900">Work</h1> </div>   </div>
     {
     workPage.map((d)=>{
-        const data = <div className={`${visb}${animate}`}>
+        const data = <div className={`${visb}${animate}`} key={d.id}>
         <CardGenerator image ={d.image} text={d.data}/></div>
         return data;
     })

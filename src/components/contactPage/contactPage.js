@@ -1,14 +1,34 @@
 import emailjs from 'emailjs-com'
+import Alert from './Alert'
+import { useState } from 'react';
 const ContactPage = ()=>{
+const[notif,setNotif]=useState({success:false,failed:false})
+    
+const SucessObj ={
+  type:'Success',
+  heading:'Success',
+  message:'Your Email was sent to Muaaz Khan',
+  time:5000
+}
+const FailedObj ={
+  type:'Failed',
+  heading:'Failed',
+  message:'There was some problem. Please try again later',
+  time:5000
+}
 
-    const SendData = (e)=>{
+
+
+
+
+const SendData = (e)=>{
         e.preventDefault();
 
     emailjs.sendForm('service_cgtuv2q', 'template_c7r0uzb', e.target, 'pNHewHZ_2Cpgschb5')
       .then((result) => {
-        alert('Thank You For Contacting ')
+        setNotif({success:true,failed:false})
       }, (error) => {
-        alert("Some Kind Of error occured Please try Again Later")
+        setNotif({success:false,failed:true})
       }
       );
       e.target.reset();
@@ -20,7 +40,9 @@ const ContactPage = ()=>{
 
 
     return(<section className="text-cusWhite bg-cusGreen font-poppins relative" id='contact'>
+  
   <div className="container px-5 py-24 mx-auto">
+  
     <div className="flex flex-col text-center w-full mb-12">
       <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Contact Me</h1>
       <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Wanna connect! , Contact me right now and lets work togather</p>
@@ -48,11 +70,17 @@ const ContactPage = ()=>{
         </div>
         <div className="p-2 w-full">
           <button type='submit' className="flex mx-auto text-white bg-cusBlue border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg shadow-lg">Submit</button>
+          <div className='mt-5'>
+          {notif.success && <Alert dataRec={SucessObj}/>}
+          {notif.failed && <Alert dataRec={FailedObj}/>}
+  </div>
         </div>
       </div>
     </div>
     </form>
   </div>
+  
+
 </section>)
 }
 export default ContactPage;
