@@ -6,18 +6,38 @@ import image5 from './skill_imgs/gr5.png'
 import image6 from './skill_imgs/gr6.png'
 import ResBuild from './work_imgs/resBuild.png'
 import Zaino from './work_imgs/Zaino.png'
+import OmniFood from './work_imgs/Omnifood.png'
+import Clipboard from './work_imgs/Clipboard.png'
 export const SkillAdd = [image1,image2,image3,image4,image5,image6]
-export const workPage=[{
-    id:0,
-    image:ResBuild,
-    title:'Resume builder',
-    para:'This website was developed by me for users to make their resume by just providing information and choosing their favourite design. The whole website is made with React.js and I am currently working to make it responsive',
-    link:'https://resumebuilder-ver1.netlify.app/'},
+export const workPage=[
     {
-    id:1,
-    image:Zaino,
-    title:'Zaino',
-    para:'This website was developed by me for users to know the weather condition of thier current location, This site uses OpenWeather API and Weather.io API for accurate information , Fully responsive designed and automatically reads the location of The user, With current weather condition this site also provides info for upcoming 4 days as well as Wind speed and Humidity.',
-    link:'https://zaino.netlify.app/'}
-    ]
+        id: 0,
+        image: Zaino,
+        title: 'Zaino',
+        para: 'This website was developed by me for users to know the weather condition of thier current location, This site uses OpenWeather API and Weather.io API for accurate information , Fully responsive designed and automatically reads the location of The user, With current weather condition this site also provides info for upcoming 4 days as well as Wind speed and Humidity.',
+        link: 'https://zaino.netlify.app/'
+    },
+    {
+        id: 1,
+        image: OmniFood,
+        title: 'Omnifood',
+        para: 'This website was developed by me for Compnay name Omnifood for thier business website , mainly used tailwind css for designing and developing , its only front end design of the applictaion',
+        link: 'https://omnifood-orpin.vercel.app'
+    },
+    {
+        id: 2,
+        image: Clipboard,
+        title: 'Clipboard',
+        para: 'This website was developed by me for as a front end Design for a Company which develops apps for Windows and Mac applications, Mostly used tailwind css for developing the front end for the Online application',
+        link: 'https://clipboardsite.vercel.app'
+    },
+    {
+        id: 3,
+        image: ResBuild,
+        title: 'Resume builder',
+        para: 'This website was developed by me for users to make their resume by just providing information and choosing their favourite design. The whole website is made with React.js and I am currently working to make it responsive',
+        link: 'https://resumebuilder-ver1.netlify.app/'
+    },
+
+]
 export const aboutData = ' I am a hardworking and ambitious individual with a great passion for Computer Science and Designing thats why I have more than a year of Experince in React. I am currently in my second semester of studying BS Computer Science at Khawaja Fareed University Of Engineering and Technology. I have good Programming skills, enabling me to effectively work with React and its eco system. My main Passion is making creative and out of box idea into reality.'
