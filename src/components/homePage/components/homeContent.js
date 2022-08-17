@@ -16,7 +16,7 @@ export const HomeContent=()=>{
  <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
  <div className={`${visb} ${animate} `}>        
       <h1 className="title-font sm:text-6xl text-5xl mb-4 font-medium">Muaaz Khan
-        <br className="hidden lg:inline-block"></br><div className='sm:text-5xl text-4xl font-bold'>React & React Native</div> 
+        <br className="hidden lg:inline-block"></br><div className='sm:text-6xl text-5xl font-bold'>React</div> 
        <div className='sm:text-7xl text-6xl font-bold'>Developer</div> 
 
       </h1>
