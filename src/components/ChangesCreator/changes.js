@@ -6,8 +6,8 @@ import image5 from './skill_imgs/gr5.png'
 import image6 from './skill_imgs/gr6.png'
 import ResBuild from './work_imgs/resBuild.png'
 import Zaino from './work_imgs/Zaino.png'
-import OmniFood from './work_imgs/Omnifood.png'
 import Clipboard from './work_imgs/Clipboard.png'
+import Avro from './work_imgs/AVRO.png'
 export const SkillAdd = [image1,image2,image3,image4,image5,image6]
 export const workPage=[
     {
@@ -19,10 +19,10 @@ export const workPage=[
     },
     {
         id: 1,
-        image: OmniFood,
-        title: 'Omnifood',
-        para: 'This website was developed by me for Compnay name Omnifood for thier business website , mainly used tailwind css for designing and developing , its only front end design of the applictaion',
-        link: 'https://omnifood-orpin.vercel.app'
+        image: Avro,
+        title: 'Avro',
+        para: 'Avro is a Ecommerce website developed by me as a internship project, the challenge for this website was to develop website with pure Java script, no frameworks or libraries were allowed so this website is purly made with html, Css and, Java script and uses browser Localstorage for storing data, This website is totally responsive with all tools working and soon will be shift to react with firbase realtime Database.',
+        link: 'https://avro-intern.netlify.app/'
     },
     {
         id: 2,
