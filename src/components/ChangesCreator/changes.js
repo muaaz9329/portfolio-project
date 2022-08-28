@@ -40,4 +40,4 @@ export const workPage=[
     },
 
 ]
-export const aboutData = ' I am a hardworking and ambitious individual with a great passion for Computer Science and Designing thats why I have more than a year of Experince in React. I am currently in my second semester of studying BS Computer Science at Khawaja Fareed University Of Engineering and Technology. I have good Programming skills, enabling me to effectively work with React and its eco system. My main Passion is making creative and out of box idea into reality.'
+export const aboutData = ' I am a hardworking and ambitious individual with a great passion for Computer Science and Designing thats why I have more than a year of Experience in React. I am currently in my second semester of studying BS Computer Science at Khawaja Fareed University Of Engineering and Technology. I have good Programming skills, enabling me to effectively work with React and its Eco system. My main Passion is making creative and out of box idea into reality.'
