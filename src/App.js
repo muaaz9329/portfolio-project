@@ -5,6 +5,7 @@ import AboutPage from './components/aboutPage/aboutPage';
 import SkillPage from './components/skillPage/skillPage';
 import WorkPage from './components/workPage/workPage';
 import ContactPage from './components/contactPage/contactPage';
+import Footer from './components/Footer';
 // General scroll to element function
 
 
@@ -31,6 +32,7 @@ export default function App() {
     <SkillPage/> 
     <WorkPage />
     <ContactPage />
+    <Footer/>
     </div>
   )
 }
