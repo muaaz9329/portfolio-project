@@ -6,8 +6,9 @@ import image5 from './skill_imgs/gr5.png'
 import image6 from './skill_imgs/gr6.png'
 import ResBuild from './work_imgs/resBuild.png'
 import Zaino from './work_imgs/Zaino.png'
-import Clipboard from './work_imgs/Clipboard.png'
 import Avro from './work_imgs/AVRO.png'
+import theSilence from './work_imgs/theSilence.png'
+import adminPanel from './work_imgs/adminPanel.png'
 export const SkillAdd = [image1,image2,image3,image4,image5,image6]
 export const workPage=[
     {
@@ -26,13 +27,20 @@ export const workPage=[
     },
     {
         id: 2,
-        image: Clipboard,
-        title: 'Clipboard',
-        para: 'This website was developed by me for as a front end Design for a Company which develops apps for Windows and Mac applications, Mostly used tailwind css for developing the front end for the Online application',
-        link: 'https://clipboardsite.vercel.app'
+        image: theSilence,
+        title: 'The Silence',
+        para: 'The Silence is science blog that is developed by me for a friend , this blogs front end was developed in React and designed in tailwind css , this project also used React router dom for creating routes, this project uses firebase for backend , and firebase database system to read the data to for blog , for writing blogs another website admin-thesilence.netlify.app is made for admin access to blog',
+        link: 'https://thesilence.netlify.app/'
     },
     {
         id: 3,
+        image: adminPanel,
+        title: 'Admin Page Of The Silence',
+        para: 'This is the admin panel website for The silence , which also uses firebase for authentication as well as for Creating,Updating,Deleting the blogs for The Silence . This website uses React Router Dom for creating routes for each individual blog to update , also Private routes are made using react router dom to stop unauthorize access to blogs setting. Context api is also used to store data and to distribute it to all the components of application. For desiging tailwind css is used. ',
+        link: 'https://admin-thesilence.netlify.app'
+    },
+    {
+        id: 4,
         image: ResBuild,
         title: 'Resume builder',
         para: 'This website was developed by me for users to make their resume by just providing information and choosing their favourite design. The whole website is made with React.js and I am currently working to make it responsive',
