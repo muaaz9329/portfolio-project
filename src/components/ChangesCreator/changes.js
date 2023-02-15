@@ -4,11 +4,14 @@ import image3 from './skill_imgs/gr3.png'
 import image4 from './skill_imgs/gr4.png'
 import image5 from './skill_imgs/gr5.png'
 import image6 from './skill_imgs/gr6.png'
-import ResBuild from './work_imgs/resBuild.png'
 import Zaino from './work_imgs/Zaino.png'
 import Avro from './work_imgs/AVRO.png'
 import theSilence from './work_imgs/theSilence.png'
 import adminPanel from './work_imgs/adminPanel.png'
+import ClipBoard from "./work_imgs/Clipboard.png"
+import VertixSoft from "./work_imgs/VertixSoft.png"
+import Chearful1 from "./work_imgs/ChearfulWebinar.png"
+import Chearfulapp from "./work_imgs/ChearfulApp.png"
 export const SkillAdd = [image1,image2,image3,image4,image5,image6]
 export const workPage=[
     {
@@ -41,11 +44,31 @@ export const workPage=[
     },
     {
         id: 4,
-        image: ResBuild,
-        title: 'Resume builder',
-        para: 'This website was developed by me for users to make their resume by just providing information and choosing their favourite design. The whole website is made with React.js and I am currently working to make it responsive',
-        link: 'https://resumebuilder-ver1.netlify.app/'
+        image: ClipBoard,
+        title: 'ClipBoard',
+        para: 'This is just a Static Webpage I created for my own Practise and working',
+        link: 'https://clipboardsite.vercel.app/'
+    },{
+        id: 5,
+        image: VertixSoft,
+        title: 'VertixSoft',
+        para: 'This is also just a Static Webpage I created for my own Practise and working',
+        link: 'https://vertixsoft.vercel.app/'
     },
+    {
+        id: 6,
+        image: Chearful1,
+        title: 'Chearful Webinar',
+        para: 'This is one of the Static Website I have Created for my company , Pangiah which is a dubai based Tech Venture made by Experienced People',
+        link: 'https://chearful.com/webinar-heriot-watt-university'
+    },
+    {
+        id: 7,
+        image: Chearfulapp,
+        title: 'Chearful App',
+        para: 'This is the Chearful App I am working on right now as a React native Solo Developer , this App is not complete and in development and designing phase',
+        link: 'https://drive.google.com/file/d/14MsWiPulFZNnpCkYV4pRjk6PLs99MKvQ/view?usp=sharing'
+    }
 
 ]
-export const aboutData = ' I am a hardworking and ambitious individual with a great passion for Computer Science and Designing thats why I have more than a year of Experience in React. I am currently in my second semester of studying BS Computer Science at Khawaja Fareed University Of Engineering and Technology. I have good Programming skills, enabling me to effectively work with React and its Eco system. My main Passion is making creative and out of box idea into reality.'
+export const aboutData = ' I am a hardworking and ambitious individual with a great passion for Computer Science and Designing thats why I have more than a year of Experience in React. I am currently in my third semester of studying BS Computer Science at Khawaja Fareed University Of Engineering and Technology. I have good Programming skills, enabling me to effectively work with React and its Eco system. My main Passion is making creative and out of box idea into reality.'
